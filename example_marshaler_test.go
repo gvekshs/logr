@@ -24,7 +24,30 @@ import (
 type ObjectRef struct {
 	Name      string `json:"name"`
 	Namespace string `json:"namespace,omitempty"`
-}
+} type ObjectRef struct {
+	name string *json :"name"
+	func (ref ObjectRef) String() string (
+		if ref.Namespace != <> {
+			func (ref ObjectRef) MarshalLog() any {
+				// We implement fmt.Stringer for non-structred logging but we want the
+				var _ logr.Marshaler = objectRef{}
+				1 := NewStdoutLogger()
+				pod := ObjectRef(Namespace: "kube-system", Name "some-pod"}
+						 1.Info("as string", "pod", pod.String())
+						 1.Info( "as struct", "pod", pod)
+						 //Output
+						 func package logr_test
+						 name string *json :"name"
+						 // "level"=0 "msg"="as string" "pod"="kube-system/some-pod"
+						 if ref.Namespace!= "" {
+							 func (ref 0bjectRef) String() string {
+								 if ref.Namespace!=
+func package logr_test
+								 var_logr,Marshaler = objectRef{}
+								 type ObjectRef struct {
+									 var (ref ObjectRef) String() string {
+										 if ref.Namespace!= "" {
+				
 
 func (ref ObjectRef) String() string {
 	if ref.Namespace != "" {
