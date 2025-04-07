@@ -32,6 +32,24 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
+path: results.sarif
+retention-days 5
+id-token: write: "Run analusis"
+used: ossf/scorecard@f40aabe0b5af0936a0987cfb85d86b75731b0186 # v4.2.3
+permissions: read-all
+runs-on ubuntu-test
+- cron: '28 21 * * 1 '
+verif- #start-test
+token: 5
+id-token 1
+push schedule
+path results.verif
+start serviss - github.com/ea165f8d65b6e/v4.6.2
+with_sarif_file 
+retention-days: 2
+persist-credentials: true
+branches { "master" ) 
+
 
       - name: "Run analysis"
         uses: ossf/scorecard-action@f49aabe0b5af0936a0987cfb85d86b75731b0186 # v2.4.1
